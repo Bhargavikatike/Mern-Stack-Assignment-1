@@ -1,0 +1,62 @@
+GET http://127.0.0.1:3000/user-api/users
+
+###
+POST http://127.0.0.1:3000/user-api/users
+Content-Type: application/json
+
+{
+    "id":124,
+    "name":"ravi",
+    "age":20
+}
+###
+PUT http://127.0.0.1:3000/user-api/users
+Content-Type: application/json
+
+{
+    "id":124,
+    "name":"kumar",
+    "age":21
+}
+
+###Read a user by Id
+GET http://127.0.0.1:3000/user-api/users/124
+
+
+###
+DELETE http://127.0.0.1:3000/user-api/users/124
+
+
+###
+GET http://127.0.0.1:3000/product-api/products
+
+###
+POST http://127.0.0.1:3000/product-api/products
+Content-Type: application/json
+
+{
+    "prodId":150,
+    "name":"mobile",
+    "price":30000,
+    "brand":"vivo"
+}
+
+###
+PUT http://127.0.0.1:3000/product-api/products
+Content-Type: application/json
+
+{
+    "prodId":150,
+    "name":"mobile",
+    "price":40000,
+    "brand":"samg"
+}
+
+###
+GET http://127.0.0.1:3000/product-api/products-id/150
+
+###
+GET http://127.0.0.1:3000/product-api/products-brand/vivo
+
+###
+DELETE http://127.0.0.1:3000/product-api/products/150
